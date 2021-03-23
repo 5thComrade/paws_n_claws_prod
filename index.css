@@ -10,7 +10,11 @@
   --primary-orange: #f28b05;
   --primary-hover: #d94f30;
   --primary-white: #ffffff;
-  --primary-font: "Roboto", sans-serif;
+  --primary-black: #393232;
+  --primary-grey: #f2edd7;
+  --primary-green: #3a6351;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
   --transition: all 0.3s ease-in-out;
 }
 
@@ -23,13 +27,13 @@ body {
   padding: 0;
   height: 100vh;
   width: 100%;
-  background-color: #000000;
+  background-color: var(--primary-grey);
 }
 
 #root {
   height: 100%;
   width: 100%;
-  background: #000000;
+  background: var(--primary-grey);
   position: absolute;
   top: 0;
   left: 0;
@@ -54,10 +58,5 @@ hr {
   width: 100%;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0)
-  );
+  background: var(--primary-black);
 }
